@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "primereact/resources/themes/lara-light-cyan/theme.css";
+@import '../public/css/fontawesome-all.css';  
+@import '../public/css/magnific-popup.css'; 
+@import '../public/css/styles.css'; 
+@import '../public/css/swiper.css'; 
+html{
+  scroll-behavior: smooth !important;
+}
+
+::selection {
+  background-color: #eb427e; 
+  color: #ffffff;          
+}
+
+::-moz-selection {
+  background-color: #eb427e; 
+  color: #ffffff;
+}
+
+::-webkit-selection {
+  background-color: #eb427e;
+  color: #ffffff;
+}
+
+.text-primary {
+  color:#eb427e;
+}
+  .slider {
+    position: relative;
+    background: url("../public/images/bg.jpg") no-repeat center center;
+    background-size: cover;
+    padding: 180px 0px;
+    color: white;
+  }
+  
+  .slider::before {
+    background: #000;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    bottom: 0;
+    content: "";
+    height: 100%;
+    /* left: 0; */
+    opacity: .8;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+
+
+  }
+  
+  .slider > div {
+    position: relative;
+    z-index: 2;
+  }
+  
+.subed{
+    /* color: #fff; */
+    letter-spacing: 5px;
+    border: 2px solid #fff;
+    padding: 3px 15px 5px 15px;
+    opacity: 0.8;
+}
+
+
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+  background-image: none !important;
+}
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+  background-image: none !important;
+}
